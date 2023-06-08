@@ -1,0 +1,152 @@
+2023/06/08 10:35:28 [INFO] Packer version: 1.8.6 [go1.18.9 linux amd64]
+2023/06/08 10:35:28 [TRACE] discovering plugins in /usr/bin
+2023/06/08 10:35:28 [TRACE] discovering plugins in /root/.config/packer/plugins
+2023/06/08 10:35:28 [TRACE] discovering plugins in .
+2023/06/08 10:35:28 [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2023/06/08 10:35:28 [INFO] PACKER_CONFIG env var set; attempting to open config file: /root/.packerconfig
+2023/06/08 10:35:28 [WARN] Config file doesn't exist: /root/.packerconfig
+2023/06/08 10:35:28 [INFO] Setting cache directory: /root/.cache/packer
+2023/06/08 10:35:28 [TRACE] Starting internal plugin packer-builder-docker
+2023/06/08 10:35:28 Starting plugin: /usr/bin/packer []string{"/usr/bin/packer", "plugin", "packer-builder-docker"}
+2023/06/08 10:35:28 Waiting for RPC address for: /usr/bin/packer
+2023/06/08 10:35:28 packer-builder-docker plugin: [INFO] Packer version: 1.8.6 [go1.18.9 linux amd64]
+2023/06/08 10:35:28 packer-builder-docker plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2023/06/08 10:35:28 packer-builder-docker plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: /root/.packerconfig
+2023/06/08 10:35:28 packer-builder-docker plugin: [WARN] Config file doesn't exist: /root/.packerconfig
+2023/06/08 10:35:28 packer-builder-docker plugin: [INFO] Setting cache directory: /root/.cache/packer
+2023/06/08 10:35:28 packer-builder-docker plugin: args: []string{"packer-builder-docker"}
+2023/06/08 10:35:28 Received unix RPC address for /usr/bin/packer: addr is /tmp/packer-plugin4133276634
+2023/06/08 10:35:28 packer-builder-docker plugin: Plugin address: unix /tmp/packer-plugin4133276634
+2023/06/08 10:35:28 packer-builder-docker plugin: Waiting for connection...
+2023/06/08 10:35:28 packer-builder-docker plugin: Serving a plugin connection...
+2023/06/08 10:35:28 [TRACE] Starting internal plugin packer-post-processor-docker-tag
+2023/06/08 10:35:28 Starting plugin: /usr/bin/packer []string{"/usr/bin/packer", "plugin", "packer-post-processor-docker-tag"}
+2023/06/08 10:35:28 Waiting for RPC address for: /usr/bin/packer
+2023/06/08 10:35:28 packer-post-processor-docker-tag plugin: [INFO] Packer version: 1.8.6 [go1.18.9 linux amd64]
+2023/06/08 10:35:28 packer-post-processor-docker-tag plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2023/06/08 10:35:28 packer-post-processor-docker-tag plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: /root/.packerconfig
+2023/06/08 10:35:28 packer-post-processor-docker-tag plugin: [WARN] Config file doesn't exist: /root/.packerconfig
+2023/06/08 10:35:28 packer-post-processor-docker-tag plugin: [INFO] Setting cache directory: /root/.cache/packer
+2023/06/08 10:35:28 packer-post-processor-docker-tag plugin: args: []string{"packer-post-processor-docker-tag"}
+2023/06/08 10:35:28 Received unix RPC address for /usr/bin/packer: addr is /tmp/packer-plugin409621784
+2023/06/08 10:35:28 packer-post-processor-docker-tag plugin: Plugin address: unix /tmp/packer-plugin409621784
+2023/06/08 10:35:28 packer-post-processor-docker-tag plugin: Waiting for connection...
+2023/06/08 10:35:28 packer-post-processor-docker-tag plugin: Serving a plugin connection...
+2023/06/08 10:35:28 [TRACE] Starting internal plugin packer-post-processor-docker-push
+2023/06/08 10:35:28 Starting plugin: /usr/bin/packer []string{"/usr/bin/packer", "plugin", "packer-post-processor-docker-push"}
+2023/06/08 10:35:28 Waiting for RPC address for: /usr/bin/packer
+2023/06/08 10:35:28 packer-post-processor-docker-push plugin: [INFO] Packer version: 1.8.6 [go1.18.9 linux amd64]
+2023/06/08 10:35:28 packer-post-processor-docker-push plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2023/06/08 10:35:28 packer-post-processor-docker-push plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: /root/.packerconfig
+2023/06/08 10:35:28 packer-post-processor-docker-push plugin: [WARN] Config file doesn't exist: /root/.packerconfig
+2023/06/08 10:35:28 packer-post-processor-docker-push plugin: [INFO] Setting cache directory: /root/.cache/packer
+2023/06/08 10:35:28 packer-post-processor-docker-push plugin: args: []string{"packer-post-processor-docker-push"}
+2023/06/08 10:35:28 packer-post-processor-docker-push plugin: Plugin address: unix /tmp/packer-plugin3801616253
+2023/06/08 10:35:28 Received unix RPC address for /usr/bin/packer: addr is /tmp/packer-plugin3801616253
+2023/06/08 10:35:28 packer-post-processor-docker-push plugin: Waiting for connection...
+2023/06/08 10:35:28 packer-post-processor-docker-push plugin: Serving a plugin connection...
+2023/06/08 10:35:28 Preparing build: docker
+2023/06/08 10:35:28 ui: [1;32mdocker: output will be in this color.[0m
+2023/06/08 10:35:28 ui: 
+2023/06/08 10:35:28 Build debug mode: false
+2023/06/08 10:35:28 Force build: false
+2023/06/08 10:35:28 On error: 
+2023/06/08 10:35:28 Waiting on builds to complete...
+2023/06/08 10:35:28 Starting build run: docker
+2023/06/08 10:35:28 Running builder: docker
+2023/06/08 10:35:28 [INFO] (telemetry) Starting builder docker
+2023/06/08 10:35:28 packer-builder-docker plugin: [DEBUG] Docker version: 20.0.0
+2023/06/08 10:35:28 packer-builder-docker plugin: [DEBUG] Container will be committed
+2023/06/08 10:35:28 ui: [1;32m==> docker: Creating a temporary directory for sharing data...[0m
+2023/06/08 10:35:28 packer-builder-docker plugin: Set Packer temp dir to /root/.config/packer/tmp721744379
+2023/06/08 10:35:28 ui: [1;32m==> docker: Pulling Docker image: amazonlinux:2[0m
+2023/06/08 10:35:28 packer-builder-docker plugin: Executing: /usr/bin/docker [pull amazonlinux:2]
+2023/06/08 10:35:30 ui: [0;32m    docker: 2: Pulling from library/amazonlinux[0m
+2023/06/08 10:35:30 ui: [0;32m    docker: Digest: sha256:7398071a0b5092a5817ccab9f5d634998160c6447c752d8287713e48c9add27c[0m
+2023/06/08 10:35:30 ui: [0;32m    docker: Status: Image is up to date for amazonlinux:2[0m
+2023/06/08 10:35:30 ui: [0;32m    docker: docker.io/library/amazonlinux:2[0m
+2023/06/08 10:35:30 ui: [1;32m==> docker: Starting docker container...[0m
+2023/06/08 10:35:30 ui: [0;32m    docker: Run command: docker run -v /root/.config/packer/tmp721744379:/packer-files -d -i -t --entrypoint=/bin/sh -- amazonlinux:2[0m
+2023/06/08 10:35:30 packer-builder-docker plugin: Starting container with args: [run -v /root/.config/packer/tmp721744379:/packer-files -d -i -t --entrypoint=/bin/sh -- amazonlinux:2]
+2023/06/08 10:35:30 packer-builder-docker plugin: Waiting for container to finish starting
+2023/06/08 10:35:31 ui: [0;32m    docker: Container ID: 656b7f8fa34a4e27b9c67b80b25d7b08cc6506a2f42aad85dbdaf11a9c711105[0m
+2023/06/08 10:35:31 ui: [1;32m==> docker: Using docker communicator to connect: 172.17.0.2[0m
+2023/06/08 10:35:31 packer-builder-docker plugin: Running the provision hook
+2023/06/08 10:35:31 ui: [1;32m==> docker: Committing the container[0m
+2023/06/08 10:35:31 packer-builder-docker plugin: Committing container with args: [commit --change ONBUILD RUN rpm -Uvh https://corretto.aws/downloads/latest/amazon-corretto-11-x64-linux-jdk.rpm 656b7f8fa34a4e27b9c67b80b25d7b08cc6506a2f42aad85dbdaf11a9c711105]
+2023/06/08 10:35:31 ui: [0;32m    docker: Image ID: sha256:553636ab4c56dbfb679b9cc3930854878247d3b70673c09d7ee4fa0df6140402[0m
+2023/06/08 10:35:31 ui: [1;32m==> docker: Killing the container: 656b7f8fa34a4e27b9c67b80b25d7b08cc6506a2f42aad85dbdaf11a9c711105[0m
+2023/06/08 10:35:31 [INFO] (telemetry) ending docker
+2023/06/08 10:35:31 ui: [1;32m==> docker: Running post-processor: docker-tag[0m
+2023/06/08 10:35:31 [INFO] (telemetry) Starting post-processor docker-tag
+2023/06/08 10:35:31 ui: [0;32m    docker (docker-tag): Tagging image: sha256:553636ab4c56dbfb679b9cc3930854878247d3b70673c09d7ee4fa0df6140402[0m
+2023/06/08 10:35:31 ui: [0;32m    docker (docker-tag): Repository: 354285753755.dkr.ecr.ap-southeast-1.amazonaws.com/prod-munna:0.7[0m
+2023/06/08 10:35:31 [INFO] (telemetry) ending docker-tag
+2023/06/08 10:35:31 Flagging to keep original artifact from post-processor 'docker-tag'
+2023/06/08 10:35:31 ui: [1;32m==> docker: Running post-processor: docker-push[0m
+2023/06/08 10:35:31 [INFO] (telemetry) Starting post-processor docker-push
+2023/06/08 10:35:31 ui: [0;32m    docker (docker-push): Creating temporary Docker configuration directory[0m
+2023/06/08 10:35:31 ui: [0;32m    docker (docker-push): Fetching ECR credentials...[0m
+2023/06/08 10:35:31 packer-post-processor-docker-push plugin: Getting ECR token for account: 354285753755 in ap-southeast-1..
+2023/06/08 10:35:31 packer-post-processor-docker-push plugin: [INFO] Attempting to use session-derived credentials
+2023/06/08 10:35:31 packer-post-processor-docker-push plugin: [INFO] Successfully derived credentials from session
+2023/06/08 10:35:31 packer-post-processor-docker-push plugin: [INFO] AWS Auth provider used: "EC2RoleProvider"
+2023/06/08 10:35:31 packer-post-processor-docker-push plugin: Found region ap-southeast-1
+2023/06/08 10:35:31 packer-post-processor-docker-push plugin: [INFO] AWS authentication used: "EC2RoleProvider"
+2023/06/08 10:35:31 packer-post-processor-docker-push plugin: Successfully got login for ECR: 354285753755.dkr.ecr.ap-southeast-1.amazonaws.com/prod-munna
+2023/06/08 10:35:31 ui: [0;32m    docker (docker-push): Logging in...[0m
+2023/06/08 10:35:31 packer-post-processor-docker-push plugin: Executing: /usr/bin/docker [--config /tmp/packer160048399 login -u AWS --password-stdin 354285753755.dkr.ecr.ap-southeast-1.amazonaws.com/prod-munna]
+2023/06/08 10:35:31 ui: [0;32m    docker (docker-push): WARNING! Your password will be stored unencrypted in /tmp/packer160048399/config.json.[0m
+2023/06/08 10:35:31 ui: [0;32m    docker (docker-push): Configure a credential helper to remove this warning. See[0m
+2023/06/08 10:35:31 ui: [0;32m    docker (docker-push): Login Succeeded[0m
+2023/06/08 10:35:31 ui: [0;32m    docker (docker-push): https://docs.docker.com/engine/reference/commandline/login/#credentials-store[0m
+2023/06/08 10:35:31 ui: [0;32m    docker (docker-push): Pushing: 354285753755.dkr.ecr.ap-southeast-1.amazonaws.com/prod-munna:0.7[0m
+2023/06/08 10:35:31 packer-post-processor-docker-push plugin: Executing: /usr/bin/docker [--config /tmp/packer160048399 push 354285753755.dkr.ecr.ap-southeast-1.amazonaws.com/prod-munna:0.7]
+2023/06/08 10:35:32 ui: [0;32m    docker (docker-push): The push refers to repository [354285753755.dkr.ecr.ap-southeast-1.amazonaws.com/prod-munna][0m
+2023/06/08 10:35:32 ui: [0;32m    docker (docker-push): 4b7563f271f0: Preparing[0m
+2023/06/08 10:35:32 ui: [0;32m    docker (docker-push): 8874fc6e6c79: Preparing[0m
+2023/06/08 10:35:32 ui: [0;32m    docker (docker-push): 8874fc6e6c79: Layer already exists[0m
+2023/06/08 10:35:32 ui: [0;32m    docker (docker-push): 4b7563f271f0: Pushed[0m
+2023/06/08 10:35:32 ui: [0;32m    docker (docker-push): 0.7: digest: sha256:ce19cbe1df6ba28b4025711c7851404219ab8a976cfce97b19c5a35189ab40cd size: 736[0m
+2023/06/08 10:35:32 ui: [0;32m    docker (docker-push): Pushing: 354285753755.dkr.ecr.ap-southeast-1.amazonaws.com/prod-munna:0.7[0m
+2023/06/08 10:35:32 packer-post-processor-docker-push plugin: Executing: /usr/bin/docker [--config /tmp/packer160048399 push 354285753755.dkr.ecr.ap-southeast-1.amazonaws.com/prod-munna:0.7]
+2023/06/08 10:35:32 ui: [0;32m    docker (docker-push): The push refers to repository [354285753755.dkr.ecr.ap-southeast-1.amazonaws.com/prod-munna][0m
+2023/06/08 10:35:32 ui: [0;32m    docker (docker-push): 4b7563f271f0: Preparing[0m
+2023/06/08 10:35:32 ui: [0;32m    docker (docker-push): 8874fc6e6c79: Preparing[0m
+2023/06/08 10:35:33 ui: [0;32m    docker (docker-push): 4b7563f271f0: Layer already exists[0m
+2023/06/08 10:35:33 ui: [0;32m    docker (docker-push): 8874fc6e6c79: Layer already exists[0m
+2023/06/08 10:35:33 ui: [0;32m    docker (docker-push): 0.7: digest: sha256:ce19cbe1df6ba28b4025711c7851404219ab8a976cfce97b19c5a35189ab40cd size: 736[0m
+2023/06/08 10:35:33 ui: [0;32m    docker (docker-push): Logging out...[0m
+2023/06/08 10:35:33 packer-post-processor-docker-push plugin: Executing: /usr/bin/docker [--config /tmp/packer160048399 logout 354285753755.dkr.ecr.ap-southeast-1.amazonaws.com/prod-munna]
+2023/06/08 10:35:33 ui: [0;32m    docker (docker-push): Removing login credentials for 354285753755.dkr.ecr.ap-southeast-1.amazonaws.com[0m
+2023/06/08 10:35:33 ui: [0;32m    docker (docker-push): Removing temporary Docker configuration directory[0m
+2023/06/08 10:35:33 [INFO] (telemetry) ending docker-push
+2023/06/08 10:35:33 ui: [1;32mBuild 'docker' finished after 4 seconds 831 milliseconds.[0m
+2023/06/08 10:35:33 ui: 
+==> Wait completed after 4 seconds 831 milliseconds
+2023/06/08 10:35:33 ui: 
+==> Builds finished. The artifacts of successful builds are:
+2023/06/08 10:35:33 machine readable: docker,artifact-count []string{"3"}
+2023/06/08 10:35:33 machine readable: docker,artifact []string{"0", "builder-id", "packer.post-processor.docker-import"}
+2023/06/08 10:35:33 machine readable: docker,artifact []string{"0", "id", "sha256:553636ab4c56dbfb679b9cc3930854878247d3b70673c09d7ee4fa0df6140402"}
+2023/06/08 10:35:33 machine readable: docker,artifact []string{"0", "string", "Imported Docker image: sha256:553636ab4c56dbfb679b9cc3930854878247d3b70673c09d7ee4fa0df6140402"}
+2023/06/08 10:35:33 machine readable: docker,artifact []string{"0", "files-count", "0"}
+2023/06/08 10:35:33 machine readable: docker,artifact []string{"0", "end"}
+2023/06/08 10:35:33 ui: --> docker: Imported Docker image: sha256:553636ab4c56dbfb679b9cc3930854878247d3b70673c09d7ee4fa0df6140402
+2023/06/08 10:35:33 machine readable: docker,artifact []string{"1", "builder-id", "packer.post-processor.docker-tag"}
+2023/06/08 10:35:33 machine readable: docker,artifact []string{"1", "id", "354285753755.dkr.ecr.ap-southeast-1.amazonaws.com/prod-munna:0.7"}
+2023/06/08 10:35:33 machine readable: docker,artifact []string{"1", "string", "Imported Docker image: 354285753755.dkr.ecr.ap-southeast-1.amazonaws.com/prod-munna:0.7 with tags 354285753755.dkr.ecr.ap-southeast-1.amazonaws.com/prod-munna:0.7"}
+2023/06/08 10:35:33 machine readable: docker,artifact []string{"1", "files-count", "0"}
+2023/06/08 10:35:33 machine readable: docker,artifact []string{"1", "end"}
+2023/06/08 10:35:33 ui: --> docker: Imported Docker image: 354285753755.dkr.ecr.ap-southeast-1.amazonaws.com/prod-munna:0.7 with tags 354285753755.dkr.ecr.ap-southeast-1.amazonaws.com/prod-munna:0.7
+2023/06/08 10:35:33 machine readable: docker,artifact []string{"2", "builder-id", "packer.post-processor.docker-import"}
+2023/06/08 10:35:33 machine readable: docker,artifact []string{"2", "id", "354285753755.dkr.ecr.ap-southeast-1.amazonaws.com/prod-munna:0.7"}
+2023/06/08 10:35:33 machine readable: docker,artifact []string{"2", "string", "Imported Docker image: 354285753755.dkr.ecr.ap-southeast-1.amazonaws.com/prod-munna:0.7 with tags 354285753755.dkr.ecr.ap-southeast-1.amazonaws.com/prod-munna:0.7"}
+2023/06/08 10:35:33 machine readable: docker,artifact []string{"2", "files-count", "0"}
+2023/06/08 10:35:33 machine readable: docker,artifact []string{"2", "end"}
+2023/06/08 10:35:33 ui: --> docker: Imported Docker image: 354285753755.dkr.ecr.ap-southeast-1.amazonaws.com/prod-munna:0.7 with tags 354285753755.dkr.ecr.ap-southeast-1.amazonaws.com/prod-munna:0.7
+2023/06/08 10:35:33 [INFO] (telemetry) Finalizing.
+2023/06/08 10:35:34 waiting for all plugin processes to complete...
+2023/06/08 10:35:34 /usr/bin/packer: plugin process exited
+2023/06/08 10:35:34 /usr/bin/packer: plugin process exited
+2023/06/08 10:35:34 /usr/bin/packer: plugin process exited

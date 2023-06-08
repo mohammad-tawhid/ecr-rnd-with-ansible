@@ -1,0 +1,27 @@
+
+{
+ "builders":[{	
+  "type": "docker",
+  "image": "amazonlinux:2",
+  "commit": true,
+  "changes": [
+     "ONBUILD RUN rpm -Uvh https://corretto.aws/downloads/latest/amazon-corretto-11-x64-linux-jdk.rpm"
+  ]
+ }],
+
+
+  "post-processors": [
+    [
+      {
+        "type": "docker-tag",
+        "repository": "354285753755.dkr.ecr.ap-southeast-1.amazonaws.com/prod-munna",
+        "tags": ["0.7"]
+      },	    
+      {
+        "type": "docker-push",
+        "ecr_login": true,
+        "login_server": "354285753755.dkr.ecr.ap-southeast-1.amazonaws.com/prod-munna"
+      }
+    ]
+  ]
+}
