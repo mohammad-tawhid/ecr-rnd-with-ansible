@@ -1,15 +1,16 @@
-- name: Tag Image and Push to ECR [GIT COMMIT HASH]
-  docker_image:
-    name: "{{ aws_account_id }}.dkr.ecr.{{ aws_region }}.amazonaws.com/prod-munna:local"
-    repository: "{{ aws_account_id }}.dkr.ecr.{{ aws_region }}.amazonaws.com/prod-munna:{{ code_commit_id.stdout }}"
-    push: yes
-    timeout: 600
+#- name: Tag Image and Push to ECR [GIT COMMIT HASH]
+#  docker_image:
+#    name: "{{ aws_account_id }}.dkr.ecr.{{ aws_region }}.amazonaws.com/prod-munna:local"
+#    repository: "{{ aws_account_id }}.dkr.ecr.{{ aws_region }}.amazonaws.com/prod-munna:{{ code_commit_id.stdout }}"
+#    push: yes
+#    timeout: 600
 
 - name: Tag Image and Push to ECR [LATEST]
   docker_image:
-    name: "{{ aws_account_id }}.dkr.ecr.{{ aws_region }}.amazonaws.com/prod-munna:local"
-    repository: "{{ aws_account_id }}.dkr.ecr.{{ aws_region }}.amazonaws.com/prod-munna:latest"
+    name: "354285753755.dkr.ecr.ap-southeast-1.amazonaws.com/prod-munna:local"
+    repository: "354285753755.dkr.ecr.ap-southeast-1.amazonaws.com/prod-munna:latest"
     push: yes
+    source: local
     timeout: 600
 
 # - name: Tag Image and Push to ECR [GIT COMMIT HASH] - vendor100

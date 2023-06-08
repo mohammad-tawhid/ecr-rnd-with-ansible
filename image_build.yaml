@@ -1,3 +1,4 @@
+---
 - hosts: localhost
   vars_files:
     - "./var_files/prod_varfile.yaml"

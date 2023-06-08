@@ -1,5 +1,5 @@
 - name: ECR Login
-  shell: "$(aws ecr get-login --region {{ aws_region }} --no-include-email)"
+  shell: "aws ecr get-login-password --region {{ aws_region }} | docker login --username AWS --password-stdin 354285753755.dkr.ecr.ap-southeast-1.amazonaws.com"
   args:
     executable: /bin/bash
   tags:
@@ -13,7 +13,7 @@
     - docker_base_image
 - name: Generate Dockerfile - Base
   template:
-    src: docker-file-base.j2
+    src: docker-file.j2
     dest: "./ansible_managed/docker_build/base/Dockerfile"
   tags:
     - docker_base_image
@@ -21,9 +21,11 @@
   docker_image:
     build:
       path: "./ansible_managed/docker_build/base"
-    name: "amazonlinux_amazon-corretto-11-x64-linux-jdk:latest"
+    name: "354285753755.dkr.ecr.ap-southeast-1.amazonaws.com/prod-munna:local"
     push: no
     state: present
     source: build
   tags:
     - docker_base_image
+  notify:
+    - Tag Image and Push to ECR [LATEST]      
