@@ -1,0 +1,9 @@
+---
+##Common
+aws_account_id: 354285753755
+aws_region: ap-southeast-1
+
+##Image Build
+dockerBuildVars:
+
+label_name: prod_munna

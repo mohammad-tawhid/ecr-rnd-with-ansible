@@ -1,0 +1,29 @@
+- name: ECR Login
+  shell: "$(aws ecr get-login --region {{ aws_region }} --no-include-email)"
+  args:
+    executable: /bin/bash
+  tags:
+    - docker_base_image
+- name: Create Docker Build DIR - Base
+  file:
+    path: "./ansible_managed/docker_build/base"
+    state: directory
+    mode: '0755'
+  tags:
+    - docker_base_image
+- name: Generate Dockerfile - Base
+  template:
+    src: docker-file-base.j2
+    dest: "./ansible_managed/docker_build/base/Dockerfile"
+  tags:
+    - docker_base_image
+- name: Build Docker Image - Base
+  docker_image:
+    build:
+      path: "./ansible_managed/docker_build/base"
+    name: "amazonlinux_amazon-corretto-11-x64-linux-jdk:latest"
+    push: no
+    state: present
+    source: build
+  tags:
+    - docker_base_image

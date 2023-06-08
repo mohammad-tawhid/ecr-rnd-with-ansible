@@ -1,0 +1,7 @@
+- hosts: localhost
+  vars_files:
+    - "./var_files/prod_varfile.yaml"
+  connection: local
+  roles:
+    - image_build
+
