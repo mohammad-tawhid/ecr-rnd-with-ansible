@@ -1,0 +1,1 @@
+# ecr-rnd-with-ansible
